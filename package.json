@@ -1,0 +1,18 @@
+{
+  "name": "api-projeto1",
+  "version": "1.0.0",
+  "description": "API usada no projeto de portfolio do admin panel",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.0",
+    "mongoose": "^6.3.2",
+    "nodemon": "^2.0.16"
+  },
+  "author": "Bruno Blanquez",
+  "license": "ISC"
+}
