@@ -8,7 +8,7 @@ Esta API foi desenvolvida para o projeto do Painel Administrativo, também prese
 NodeJS com express
 MongoDB para o banco de dados
 
-##Como executar:
+## Como executar:
 A conexão com o banco de dados é feita pelo arquivo dbConnect.js, que está indisponível para evitar exposição de senha e usuário. Para realizar a conexão, é necessário criar um arquivo JavaScript com a estrutura abaixo:
 
 ```
