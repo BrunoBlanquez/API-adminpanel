@@ -1,10 +1,10 @@
-#API do Painel Administrativo
+# API do Painel Administrativo
 
-##Sobre o Projeto
+## Sobre o Projeto
 
 Esta API foi desenvolvida para o projeto do Painel Administrativo, também presente neste repositório. A proposta foi a simulação de uma loja, que possui uma lista de usuários e de produtos
 
-##Tecnologias usadas:
+## Tecnologias usadas:
 NodeJS com express
 MongoDB para o banco de dados
 
