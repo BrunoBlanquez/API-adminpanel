@@ -5,8 +5,10 @@ const db = require('./config/dbConnect')
 // Criando app e usando express
 const app = express()
 app.use(express.json())
+
 // CORS
 const cors = require('cors')
+
 // Puxando Rotas
 const rotas = require('./rotas/rotas')
 

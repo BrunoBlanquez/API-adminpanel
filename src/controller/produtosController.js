@@ -5,7 +5,6 @@ class ProdutosController {
   static listaProdutos = (req, resp) => {
     // .find é um método que busca os produtos
     produtos.find()
-    // 
     .exec((erro, produtos) => {
       resp.status(200).json(produtos)
     })
@@ -24,7 +23,7 @@ class ProdutosController {
   static cadastraProdutos = (req, resp) => {
     let produto = new produtos(req.body)
     produto.save((erro) => {
-      erro ? resp.status(500).send({mensagem: `${erro.message} falha no cadastro de produto`}) : resp.status(201).send(produto.toJSON())
+      erro ? resp.status(500).send({message: `${erro.message} falha no cadastro de produto`}) : resp.status(201).send(produto.toJSON())
     })
   }
 
