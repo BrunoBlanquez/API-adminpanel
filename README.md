@@ -6,6 +6,7 @@ Esta API foi desenvolvida para o projeto do Painel Administrativo, também prese
 
 ## Tecnologias usadas:
 NodeJS com express
+
 MongoDB para o banco de dados
 
 ## Como executar:
