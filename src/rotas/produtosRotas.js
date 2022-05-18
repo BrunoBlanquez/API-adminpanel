@@ -1,5 +1,5 @@
 const express = require('express')
-const ProdutosController = require('../controller/ProdutosController')
+const ProdutosController = require('../controller/produtosController')
 // Chamando router do express
 const router = express.Router()
 
