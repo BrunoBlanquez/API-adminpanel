@@ -4,7 +4,8 @@
   "description": "API usada no projeto de portfolio do admin panel",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./src/app.js",
+    "start": "node ./src/app.js",
+    "nodemonStart": "nodemon ./src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
