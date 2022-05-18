@@ -2,7 +2,7 @@
 
 ## Sobre o Projeto
 
-Esta API foi desenvolvida para o projeto do Painel Administrativo, também presente neste repositório. A proposta foi a simulação de uma loja, que possui uma lista de usuários e de produtos
+Esta API foi desenvolvida para o projeto do Painel Administrativo, também presente neste repositório. A proposta é a simulação de uma loja, que possui uma lista de usuários e de produtos
 
 ## Tecnologias usadas:
 NodeJS com express
