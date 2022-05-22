@@ -5,7 +5,7 @@ const UsuariosSchema = new mongoose.Schema(
     id: { type: String },
     usuario: { type: String, required: true },
     nome_completo: { type: String, required: true },
-    aniversariio: { type: String },
+    aniversario: { type: String },
     avatar: { type: String },
     email: { type: String, required: true },
     senha: { type: String, required: true },
