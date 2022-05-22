@@ -3,11 +3,11 @@ const mongoose = require("mongoose")
 const ProdutosSchema = new mongoose.Schema(
   {
     id: { type: String },
-    nome: { type: String, required: true },
-    imagem: { type: String, required: true },
-    estoque: { type: Number, required: true },
-    preco: { type: String, required: true },
-    marca: { type: String, required: false }
+    nome: { type: String },
+    imagem: { type: String },
+    estoque: { type: Number },
+    preco: { type: String },
+    marca: { type: String }
   },
    {versionKey: 'Versão' }
 )
