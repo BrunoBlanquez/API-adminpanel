@@ -1,13 +1,13 @@
 const express = require('express')
-const ProdutosController = require('../controller/produtosController')
+const ProductsController = require('../controller/produtos')
 // Chamando router do express
 const router = express.Router()
 
 router
-  .get("/products", ProdutosController.listaProdutos)
-  .get("/products/:id", ProdutosController.listarProdutoId)
-  .post("/newproduct", ProdutosController.cadastraProdutos)
-  .put("/products/:id", ProdutosController.atualizaProduto)
-  .delete("/products/:id", ProdutosController.deletaProduto)
+  .get("/products", ProductsController.listaProdutos)
+  .get("/products/:id", ProductsController.listarProdutoId)
+  .post("/products", ProductsController.cadastraProdutos)
+  .put("/products/:id", ProductsController.atualizaProduto)
+  .delete("/products/:id", ProductsController.deletaProduto)
 
   module.exports = router

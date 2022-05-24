@@ -1,12 +1,12 @@
 const express = require('express')
-const UsuariosController = require("../controller/usuariosController")
+const UsersController = require("../controller/usuarios")
 const router = express.Router()
 
 router  
-.get("/usuarios", UsuariosController.listaUsuarios)
-.get("/usuarios/:id", UsuariosController.listaUsuariosID)
-.post("/newuser", UsuariosController.cadastraUsuarios)
-.put("/usuarios/:id", UsuariosController.atualizaUsuario)
-.delete("/usuarios/:id", UsuariosController.deletaUsuario)
+.get("/users", UsersController.listaUsuarios)
+.get("/users/:id", UsersController.listaUsuariosID)
+.post("/users", UsersController.cadastraUsuarios)
+.put("/users/:id", UsersController.atualizaUsuario)
+.delete("/users/:id", UsersController.deletaUsuario)
 
 module.exports = router

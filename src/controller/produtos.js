@@ -1,4 +1,4 @@
-const produtos = require("../models/produtos-model")
+const produtos = require("../models/produtos")
 
 class ProdutosController {
 

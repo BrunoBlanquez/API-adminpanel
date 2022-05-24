@@ -1,4 +1,4 @@
-const usuarios = require("../models/usuarios-model")
+const usuarios = require("../models/usuarios")
 
 class UsuariosController {
   static listaUsuarios = (req, resp) => {
@@ -23,8 +23,6 @@ class UsuariosController {
       erro ? resp.status(500).send({message: `${erro.message} falha ao cadastrar novo usuário`}) : resp.status(201).send(usuario.toJSON())
     })
   }
-
-
 
   static atualizaUsuario = (req, resp) => {
     const id = req.params.id
