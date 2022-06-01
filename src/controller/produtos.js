@@ -3,7 +3,6 @@ const produtos = require("../models/produtos")
 class ProdutosController {
 
   static listaProdutos = (req, resp) => {
-    // .find é um método que busca os produtos
     produtos.find()
     .exec((erro, produtos) => {
       resp.status(200).json(produtos)
@@ -11,7 +10,6 @@ class ProdutosController {
   }
 
   static listarProdutoId = (req, resp) => {
-    // Ver como vou pegar o ID do produto
     const id = req.params.id
 
     produtos.findById(id)
@@ -28,7 +26,6 @@ class ProdutosController {
   }
 
   static atualizaProduto = (req, resp) => {
-    // ver como pega o ID e os campos no frontend
     const id = req.params.id
 
     produtos.findByIdAndUpdate(id, {$set: req.body}, (erro) => {
@@ -37,7 +34,6 @@ class ProdutosController {
   }
 
   static deletaProduto = (req, resp) => {
-    // ver como pega o ID para deletar
     const id = req.params.id
     produtos.findByIdAndDelete(id, (erro) => {
       !erro ? resp.status(200).send({message: 'Produto deletado'}) : resp.status(500).send({message: erro.message})
