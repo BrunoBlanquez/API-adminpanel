@@ -12,8 +12,6 @@ const ProdutosSchema = new mongoose.Schema(
    {versionKey: 'Versão' }
 )
 
-// Estou definindo o nome do meu banco e o esquema que eles vão seguir
-
 const produtos = mongoose.model('produtos', ProdutosSchema)
 
 module.exports = produtos

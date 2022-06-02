@@ -1,6 +1,5 @@
 const express = require('express')
 const ProductsController = require('../controller/produtos')
-// Chamando router do express
 const router = express.Router()
 
 router
