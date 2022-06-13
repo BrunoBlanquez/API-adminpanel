@@ -16,13 +16,6 @@ class UsuariosController {
       erro ? resp.status(400).send({message: `${erro.message} - ID não localizado no banco de dados`}) : resp.status(200).send(usuarios) 
     })
   }
-
-  static listaUltimosCinco = (req, resp) => {
-    usuarios.find().sort({ $natural: -1 }).limit(5)
-      .exec((erro, usuarios) => {
-      resp.status(200).json(usuarios)
-    })
-  }
   
   static cadastraUsuarios = (req, resp) => {
     let usuario = new usuarios(req.body)
