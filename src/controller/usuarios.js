@@ -17,6 +17,13 @@ class UsuariosController {
     })
   }
 
+  static listaUltimosCinco = (req, resp) => {
+    usuarios.find().sort({ $natural: -1 }).limit(5)
+      .exec((erro, usuarios) => {
+      resp.status(200).json(usuarios)
+    })
+  }
+  
   static cadastraUsuarios = (req, resp) => {
     let usuario = new usuarios(req.body)
     usuario.save((erro) => {
