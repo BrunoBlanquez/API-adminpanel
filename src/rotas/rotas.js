@@ -1,6 +1,7 @@
 const express = require('express')
 const produtos = require("./produtosRotas")
 const usuarios = require("./usuariosRotas")
+const transacoes = require("./transacoes")
 
 const routes = (app) => {
   app.route("./").get((req, resp) => {
@@ -10,7 +11,8 @@ const routes = (app) => {
   app.use(
   express.json(),
   produtos,
-  usuarios
+  usuarios,
+  transacoes
 )
 }
 
