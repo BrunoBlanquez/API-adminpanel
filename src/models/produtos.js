@@ -6,10 +6,10 @@ const ProdutosSchema = new mongoose.Schema(
     nome: { type: String },
     imagem: { type: String },
     estoque: { type: Number },
-    preco: { type: String },
+    preco: { type: Number },
     marca: { type: String }
   },
-   {versionKey: 'Versão' }
+   {versionKey: 'Versão' },
 )
 
 const produtos = mongoose.model('produtos', ProdutosSchema)
