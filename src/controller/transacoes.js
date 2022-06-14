@@ -4,6 +4,7 @@ class TransacoesController {
 
   static listaTransacoes = (req, resp) => {
     transacoes.find()
+      .populate('usuarios')
       .exec((erro, transacoes) => {
         resp.status(200).json(transacoes)
       })
