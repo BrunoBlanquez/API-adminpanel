@@ -4,9 +4,10 @@ class TransacoesController {
 
   static listaTransacoes = (req, resp) => {
     transacoes.find()
-      .populate('usuario', 'produto')
+      .populate('produto', ['nome', 'imagem', 'preco'])
+      .populate('comprador', ['nome_completo', 'usuario', 'avatar'])
       .exec((erro, transacoes) => {
-        resp.status(200).json(transacoes)
+        erro ? resp.status(400).send({message: `${erro.message} - FALHA NA BUSCA`}) : resp.status(200).json(transacoes)
       })
   }
 
