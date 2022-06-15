@@ -6,7 +6,7 @@ const ProdutosSchema = new mongoose.Schema(
     nome: { type: String },
     imagem: { type: String },
     estoque: { type: Number },
-    preco: { type: NumberDecimal },
+    preco: { type: Decimal128 },
     marca: { type: String }
   },
    {versionKey: 'Versão' },
