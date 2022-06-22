@@ -14,7 +14,7 @@ class ProdutosController {
 
     produtos.findById(id)
     .exec((erro, produtos) => {
-      erro ? resp.status(400).send({message: `${erro.message} - ID não localizado no banco de dados`}) : resp.status(200).send({_id: produtos._id, nome: produtos.nome, imagem: produtos.imagem, estoque: produtos.estoque, preco: produtos.preco['$numberDecimal'], marca: produtos.marca})
+      erro ? resp.status(400).send({message: `${erro.message} - ID não localizado no banco de dados`}) : resp.status(200).send(produtos)
     })
   }
 
